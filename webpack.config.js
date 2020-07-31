@@ -6,8 +6,31 @@ const path = require('path');
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'main.js',
+        filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            {
+             test: /\.css$/,
+             use: [
+                'style-loader',
+                 'css-loader',
+                    ],
+                 },
+           {
+             test: /\.(png|svg|jpg|gif)$/,
+             use: [
+               'file-loader',
+             ],
+           }, 
+       {
+         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+         use: [
+           'file-loader',
+         ],
+       },           
+        ],
     },
     devServer: {
         contentBase: path.resolve(__dirname, 'dist'),
@@ -23,4 +46,4 @@ module.exports = {
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
       ]
-}
+};
