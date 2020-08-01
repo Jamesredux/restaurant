@@ -5,24 +5,41 @@ import menu from './menu';
 import contact from './contact'
 
 
-const content = document.querySelector('.test');
-const newPara = document.createElement('p')
-const para = `<p>This para</p>`;
-newPara.innerHTML = para;
-content.appendChild(newPara);
-newPara.classList.add('test');
+
 
 // on load
 
-window.onload = home();
+// window.onload = home();
+const homeLink = document.querySelector('.home-tab');
+const menuLink = document.querySelector('.food-menu');
+const contactLink = document.querySelector('.contact');
 
  const setUpPage =(() => {
-    const homeLink = document.querySelector('.home-tab');
-    const menuLink = document.querySelector('.food-menu');
-    const contactLink = document.querySelector('.contact');
+    home();
+    const changeContent = (e) => {
+      const oldContent = document.querySelector('.added-content');
+      if (oldContent) oldContent.remove();
+      const newPage = e.target.className;
+      switch (newPage) {
+         case 'home-tab':
+            home();
+            break;
+         case 'food-menu':
+            menu();
+            break;
+         case 'contact':
+            contact();
+            break;
 
-    homeLink.addEventListener('click', home);
-    menuLink.addEventListener('click', menu);
-    contactLink.addEventListener('click', contact);
+      }
+   
+      
+    }
+
+    homeLink.addEventListener('click', changeContent);
+    menuLink.addEventListener('click', changeContent);
+    contactLink.addEventListener('click', changeContent);
+
+
 
  })();

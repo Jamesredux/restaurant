@@ -1,13 +1,14 @@
 const contact = () => {
-   
+    const contactContent = `
+    <h1> Contact Details </h1>
+    <p> You can find us at </p>`
 
 
-    const homeTab = document.querySelector('.home-div');
-    homeTab.style.display = 'none';
 
     const contentDiv = document.querySelector('#content')
     const innerDiv = document.createElement('div');
-    innerDiv.innerHTML = menuContent;
+    innerDiv.classList.add('added-content');
+    innerDiv.innerHTML = contactContent;
     contentDiv.appendChild(innerDiv);
 };
 

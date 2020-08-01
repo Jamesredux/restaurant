@@ -53,3 +53,54 @@
         margin: 0 auto;
         margin-top: 40px;
     }
+
+    .menu-tabs {
+        background-color:  rgb(241, 224, 243, 0.9);
+        position: relative;
+        min-height: 200px;
+        width: 900px;
+        clear: both;
+        margin: 0 0;
+        top: 30px;
+        padding-left: 10px;
+      
+    }
+
+    .tab {
+        float: left;
+    }
+
+    .tab label {
+        background: #eee;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-left: -1px;
+        position: relative;
+        left: 1px;
+    }
+
+    .tab [type=radio] {
+        display: none;
+    }
+
+    .menu-page {
+        position: absolute;
+        top: 28px;
+        left: 0;
+        background: white;
+        right: 0;
+        bottom: 0;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin: 20px;
+    }
+
+    [type=radio]:checked ~ label {
+        background: white;
+        border-bottom: 1px solid white;
+        z-index: 2;
+    }
+
+    [type=radio]:checked ~ label ~ .menu-page {
+        z-index: 1;
+    }

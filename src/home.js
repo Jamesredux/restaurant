@@ -21,7 +21,7 @@ const home = () => {
 
     const contentDiv = document.querySelector('#content')
     const innerDiv = document.createElement('div');
-    innerDiv.classList.add('home-div');
+    innerDiv.classList.add('added-content');
     innerDiv.innerHTML = homeContent;
     contentDiv.appendChild(innerDiv);
 
