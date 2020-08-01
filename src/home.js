@@ -1,7 +1,9 @@
 
 const home = () => {
 
-    const homeContent = `<h1>Welcome to the World Famous BB Diner</h1>
+    const homeContent = `
+    <div class='welcome-page'>
+    <h1>Welcome to the World Famous BB Diner</h1>
     <p>Serving delicious, hearty inexpensive food to the people of Deermeadow, Washington since
         1989. We pride ourselves that all our food is home made from the best available ingredients.
     </p>
@@ -17,7 +19,9 @@ const home = () => {
     </table>
     
     <p>Delivery Available - Events Catered</p>
-    <p>Our speciality is Blueberry Pie</p>`
+    <p>Our speciality is Blueberry Pie</p>
+    </div>
+    `
 
     const contentDiv = document.querySelector('#content')
     const innerDiv = document.createElement('div');

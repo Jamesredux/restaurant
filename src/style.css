@@ -3,12 +3,11 @@
     font-family: 'Warnes', cursive;
     */
 
+
+
     @import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Oregano&family=Warnes&display=swap');   
     
-    .test {
-        color: green;
-        font-size: 3rem;
-    }
+
     body {
         background-image: url('./assets/diner1.jpg');
         background-color: beige;
@@ -52,17 +51,18 @@
         background-color:  rgb(241, 224, 243, 0.9);
         margin: 0 auto;
         margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Cherry Cream Soda', cursive;
     }
 
     .menu-tabs {
         background-color:  rgb(241, 224, 243, 0.9);
         position: relative;
         min-height: 200px;
-        width: 900px;
-        clear: both;
-        margin: 0 0;
+        width: 800px;
+        clear: both;    
         top: 30px;
-        padding-left: 10px;
       
     }
 
@@ -81,6 +81,20 @@
 
     .tab [type=radio] {
         display: none;
+    }
+
+
+    .welcome-page {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .welcome-page > * {
+        padding: 10px;
+    }
+
+    .welcome-page table {
+        margin: 0 auto;
     }
 
     .menu-page {
@@ -103,4 +117,19 @@
 
     [type=radio]:checked ~ label ~ .menu-page {
         z-index: 1;
+    }
+
+    .menu-items {
+        display: grid;
+        grid-template-columns: 3fr 1fr 3fr 1fr;
+    }
+
+    .contact-details {
+        display: grid;
+        grid-template-columns: 66% 33%;
+        padding-top: 20px;
+    }
+
+    .map {
+      
     }
