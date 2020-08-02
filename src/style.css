@@ -46,8 +46,8 @@
     
     
     #content {
-        height: 500px;
-        width: 900px;
+        height: 650px;
+        width: 1000px;
         background-color:  rgb(241, 224, 243, 0.9);
         margin: 0 auto;
         margin-top: 40px;
@@ -59,13 +59,12 @@
     .menu-tabs {
         background-color:  rgb(241, 224, 243, 0.9);
         position: relative;
-        min-height: 200px;
-        width: 800px;
+        min-height: 350px;
+        width: 900px;
         clear: both;    
         top: 30px;
-      
+        
     }
-
     .tab {
         float: left;
     }
@@ -122,6 +121,29 @@
     .menu-items {
         display: grid;
         grid-template-columns: 3fr 1fr 3fr 1fr;
+    }
+
+    .items-col li, .price li {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom: 1px solid peachpuff;
+    }
+
+    .gallery {
+        margin-top: 50px;
+       position: relative;
+       width: 900px;
+       border: 1px solid black;
+       display: flex;
+
+      /* clear: both; */
+    }
+
+    .pic-container {
+        width: 250px;
+        height: 200px;
+        border: 1px solid green;
+        /* background-image: url('./assets/food1.jpg'); */
     }
 
     .contact-details {

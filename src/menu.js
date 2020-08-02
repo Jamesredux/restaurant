@@ -9,7 +9,7 @@ const menu = () => {
         <div class="menu-page">
          <div class="menu-items">
       
-           <div class="col-1">
+           <div class="items-col">
                <ul>
                  <li>2 Eggs, Any Style</li>
                  <li>The "Double" B</li>
@@ -29,7 +29,7 @@ const menu = () => {
                 </ul>
             </div>
         
-            <div class="col-2">
+            <div class="items-col">
                 <ul>
                   <li>French Toast</li>
                   <li>Lumberjack Special</li>
@@ -63,7 +63,7 @@ const menu = () => {
             <div class="menu-page">
              <div class="menu-items">
                 
-              <div class="col-1">
+              <div class="items-col">
                <ul>
                 <li>Quarter Pounder Hamburger</li>
                 <li>BB Special</li>
@@ -83,7 +83,7 @@ const menu = () => {
                 </ul>
             </div>
    
-           <div class="col-2">
+           <div class="items-col">
              <ul>
                 <li>French Fries</li>
                 <li>Onion Rings</li>
@@ -118,7 +118,7 @@ const menu = () => {
        <div class="menu-page">
        <div class="menu-items">
    
-       <div class="col-1">
+       <div class="items-col">
          <ul>
              <li>B.B.Q Ribs</li>
              <li>Corned Beef</li>
@@ -138,7 +138,7 @@ const menu = () => {
         </ul>
        </div>
 
-       <div class="col-2">
+       <div class="items-col">
         <ul>
             <li>Roast Chicken</li>
             <li>Pork Schnitzel</li>
@@ -171,7 +171,7 @@ const menu = () => {
       <div class="menu-page">
       <div class="menu-items">
 
-       <div class="col-1">
+       <div class="items-col">
          <ul>
              <li>Coffee or Tea</li>
              <li>Orange Juice</li>
@@ -191,7 +191,7 @@ const menu = () => {
           </ul>
         </div>
 
-        <div class="col-2">
+        <div class="items-col">
          <ul>
              <li>Blueberry Pie</li>
              <li>Cherry Pie</li>
@@ -219,8 +219,19 @@ const menu = () => {
 
         </div> 
     </div>
-     
- </div>
+
+    
+    </div>
+    <div class="gallery">
+
+     <div class="pic-container">
+       
+       
+     </div>
+
+
+
+    </div>  
   
     `
 

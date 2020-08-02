@@ -2,6 +2,7 @@ import './reset.css';
 import './style.css';
 
 import './assets/diner1.jpg';
+import './assets/food1.jpg';
 import home from './home';
 import menu from './menu';
 import contact from './contact'
