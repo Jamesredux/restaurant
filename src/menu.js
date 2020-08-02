@@ -226,7 +226,74 @@ const menu = () => {
 
      <div class="pic-container">
        
+     <img src="./images/food1.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
        
+     <img src="./images/food2.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
+       
+     <img src="./images/food3.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
+       
+     <img src="./images/food4.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
+       
+     <img src="./images/food5.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
+       
+     <img src="./images/food6.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
+       
+     <img src="./images/food7.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
+       
+     <img src="./images/food8.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
+       
+     <img src="./images/food9.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
+       
+     <img src="./images/food10.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
+       
+     <img src="./images/food11.jpg" alt="toast" >
+    
+     </div>
+
+     <div class="pic-container">
+       
+     <img src="./images/food12.jpg" alt="toast" >
+    
      </div>
 
 
