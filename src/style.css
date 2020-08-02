@@ -12,6 +12,13 @@
         background-image: url('./assets/diner1.jpg');
         background-color: beige;
     }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        padding: 10px;
+    }
     
     .header {
         color: black;
@@ -19,45 +26,49 @@
         justify-content: space-between;
         align-items: center;
         height: 100px;
-        background-color: rgba(220,218,215,1);
+        background-color:  rgb(226, 242, 243, 0.8);
         font-family: 'Warnes', cursive;
+        margin: 10px;
+        border-radius: 5px;
+
     }
     
     
     .logo {
-        font-size: 3.5rem;
+        font-size: 4rem;
         padding-left: 50px;
     }
     
-    .menu-bar {
+    .nav-bar {
         display: flex;
         font-size: 2rem;  
         padding-right: 20px;
     }
     
-    .menu-bar div {
-        padding-right: 15px;
+    .nav-bar div {
+        padding-right: 20px;
     }
 
-    .menu-bar div:hover {
-        color: purple;
+    .nav-bar div:hover, .logo:hover {
+        color: #db0662;
     }
     
     
     
     #content {
-        height: 650px;
+        /* height: 650px; */
         width: 1000px;
-        background-color:  rgb(241, 224, 243, 0.9);
+        background-color:  rgb(226, 242, 243, 0.8);
         margin: 0 auto;
         margin-top: 40px;
+        margin-bottom: 30px;
         display: flex;
         justify-content: center;
         font-family: 'Cherry Cream Soda', cursive;
+        border-radius: 20px;
     }
 
     .menu-tabs {
-        background-color:  rgb(241, 224, 243, 0.9);
         position: relative;
         min-height: 350px;
         width: 900px;
@@ -71,11 +82,12 @@
 
     .tab label {
         background: #eee;
-        padding: 10px;
+        padding: 15px;
         border: 1px solid #ccc;
         margin-left: -1px;
         position: relative;
         left: 1px;
+        border-radius: 10px;
     }
 
     .tab [type=radio] {
@@ -85,6 +97,8 @@
 
     .welcome-page {
         text-align: center;
+        letter-spacing: 0.1rem;
+        line-height: 1.5rem;
         padding-top: 30px;
     }
 
@@ -92,15 +106,38 @@
         padding: 10px;
     }
 
+    .middle-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .welcome-pic {
+        max-height: 500px;
+        max-width: 500px;
+    }
+
+    .welcome-pic img {
+        height: 90%;
+        width: 90%;
+    }
+
     .welcome-page table {
         margin: 0 auto;
     }
+    
+    .opening-hours {
+        padding-top: 30px;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+ 
 
     .menu-page {
         position: absolute;
         top: 28px;
         left: 0;
-        background: white;
+        background: #ffc5c2;
         right: 0;
         bottom: 0;
         padding: 20px;
@@ -109,7 +146,7 @@
     }
 
     [type=radio]:checked ~ label {
-        background: white;
+        background: #ffc5c2;
         border-bottom: 1px solid white;
         z-index: 2;
     }
@@ -129,23 +166,29 @@
         border-bottom: 1px solid peachpuff;
     }
 
+    .menu-info {
+        padding-top: 20px;
+    }
+
     .gallery {
-        margin-top: 50px;
+       margin-top: 50px;
        position: relative;
        width: 900px;
-       border: 1px solid black;
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-evenly;
+        
+    }
+    
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
-      /* clear: both; */
     }
 
     .pic-container {
-        width: 250px;
-        height: 200px;
-        border: 1px solid green;
         
+        width: 275px;
+        height: 250px;
+        padding: 10px;
         
     }
     
@@ -159,8 +202,15 @@
         display: grid;
         grid-template-columns: 66% 33%;
         padding-top: 20px;
+        padding-bottom: 30px;
     }
 
     .map {
       
+    }
+
+    .address {
+        margin-top: 50px;
+        line-height: 2rem;
+        font-size: 1.3rem;
     }

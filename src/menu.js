@@ -50,7 +50,7 @@ const menu = () => {
             </div>
           </div>
 
-          <div>
+          <div class="menu-info">
             All above served with toast, hash browns and bacon or Sausage
           </div>  
        </div> 
@@ -105,7 +105,7 @@ const menu = () => {
 
         </div>    
 
-            <div>
+            <div class="menu-info">
                 All Burgers Served with Fries or Onion Rings
             </div>
        </div> 
@@ -213,7 +213,7 @@ const menu = () => {
 
        </div>
        
-       <div>
+       <div class="menu-info">
         All Pies Served With Ice Cream or Cream
        </div> 
 
@@ -222,13 +222,21 @@ const menu = () => {
 
     
     </div>
-    <div class="gallery">
 
-     <div class="pic-container">
-       
-     <img src="./images/food1.jpg" alt="toast" >
     
-     </div>
+    <div class="gallery">
+    
+      <div class="gallery-header">
+        <h1> A Selection from our Menu </h1>
+      </div>
+
+    <div class="gallery-container">
+
+       <div class="pic-container">
+       
+         <img src="./images/food1.jpg" alt="toast" >
+    
+        </div>
 
      <div class="pic-container">
        
@@ -296,6 +304,7 @@ const menu = () => {
     
      </div>
 
+     </div>
 
 
     </div>  

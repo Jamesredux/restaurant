@@ -12,7 +12,7 @@ const contact = () => {
             <li>Washington</li>
             <li>Tel: 0832 322 334</li>
         </ul>
-        <p>Email: bbdinerdeermeadow5@gmail.com</p>
+        <p>Email: bbdin3r5@gmail.com</p>
     </div>
 </div>
     `
