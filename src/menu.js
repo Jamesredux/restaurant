@@ -1,5 +1,7 @@
 const menu = () => {
-    const menuContent = `
+   
+  const menuContent = `
+
     <div class="menu-tabs">
     
     <div class="tab">
@@ -240,67 +242,67 @@ const menu = () => {
 
      <div class="pic-container">
        
-     <img src="./images/food2.jpg" alt="toast" >
+     <img src="./images/food2.jpg" alt="pancakes" >
     
      </div>
 
      <div class="pic-container">
        
-     <img src="./images/food3.jpg" alt="toast" >
+     <img src="./images/food3.jpg" alt="pancakes" >
     
      </div>
 
      <div class="pic-container">
        
-     <img src="./images/food4.jpg" alt="toast" >
+     <img src="./images/food4.jpg" alt="hamburger" >
     
      </div>
 
      <div class="pic-container">
        
-     <img src="./images/food5.jpg" alt="toast" >
+     <img src="./images/food5.jpg" alt="blueberrypie" >
     
      </div>
 
      <div class="pic-container">
        
-     <img src="./images/food6.jpg" alt="toast" >
+     <img src="./images/food6.jpg" alt="cherry pie" >
     
      </div>
 
      <div class="pic-container">
        
-     <img src="./images/food7.jpg" alt="toast" >
+     <img src="./images/food7.jpg" alt="applepie" >
     
      </div>
 
      <div class="pic-container">
        
-     <img src="./images/food8.jpg" alt="toast" >
+     <img src="./images/food8.jpg" alt="coffee" >
     
      </div>
 
      <div class="pic-container">
        
-     <img src="./images/food9.jpg" alt="toast" >
+     <img src="./images/food9.jpg" alt="stew" >
     
      </div>
 
      <div class="pic-container">
        
-     <img src="./images/food10.jpg" alt="toast" >
+     <img src="./images/food10.jpg" alt="pork" >
     
      </div>
 
      <div class="pic-container">
        
-     <img src="./images/food11.jpg" alt="toast" >
+     <img src="./images/food11.jpg" alt="tbone" >
     
      </div>
 
      <div class="pic-container">
        
-     <img src="./images/food12.jpg" alt="toast" >
+     <img src="./images/food12.jpg" alt="burger" >
     
      </div>
 

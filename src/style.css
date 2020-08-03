@@ -53,10 +53,10 @@
         color: #db0662;
     }
     
-    
+    /* content  */
     
     #content {
-        /* height: 650px; */
+       
         width: 1000px;
         background-color:  rgb(226, 242, 243, 0.8);
         margin: 0 auto;
@@ -68,6 +68,51 @@
         border-radius: 20px;
     }
 
+
+    /* home */
+
+    
+
+    
+    .welcome-page {
+        text-align: center;
+        letter-spacing: 0.1rem;
+        line-height: 1.5rem;
+        padding-top: 30px;
+    }
+    
+    .welcome-page > * {
+        padding: 10px;
+    }
+    
+    .middle-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .welcome-pic {
+        max-height: 500px;
+        max-width: 500px;
+    }
+    
+    .welcome-pic img {
+        height: 90%;
+        width: 90%;
+    }
+    
+    .welcome-page table {
+        margin: 0 auto;
+    }
+    
+    .opening-hours {
+        padding-top: 30px;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+
+/* menu */
+    
     .menu-tabs {
         position: relative;
         min-height: 350px;
@@ -93,51 +138,14 @@
     .tab [type=radio] {
         display: none;
     }
-
-
-    .welcome-page {
-        text-align: center;
-        letter-spacing: 0.1rem;
-        line-height: 1.5rem;
-        padding-top: 30px;
-    }
-
-    .welcome-page > * {
-        padding: 10px;
-    }
-
-    .middle-home {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .welcome-pic {
-        max-height: 500px;
-        max-width: 500px;
-    }
-
-    .welcome-pic img {
-        height: 90%;
-        width: 90%;
-    }
-
-    .welcome-page table {
-        margin: 0 auto;
-    }
     
-    .opening-hours {
-        padding-top: 30px;
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-
- 
-
+    
+    
     .menu-page {
         position: absolute;
         top: 28px;
         left: 0;
-        background: #ffc5c2;
+        background: #f9e0c8;
         right: 0;
         bottom: 0;
         padding: 20px;
@@ -146,7 +154,7 @@
     }
 
     [type=radio]:checked ~ label {
-        background: #ffc5c2;
+        background: #f9e0c8;
         border-bottom: 1px solid white;
         z-index: 2;
     }
@@ -198,6 +206,8 @@
 
     }
 
+/*  contact */
+
     .contact-details {
         display: grid;
         grid-template-columns: 66% 33%;
@@ -205,12 +215,62 @@
         padding-bottom: 30px;
     }
 
-    .map {
-      
-    }
+
 
     .address {
         margin-top: 50px;
         line-height: 2rem;
         font-size: 1.3rem;
+      
     }
+
+
+/* media queries */
+
+@media all and ( max-width: 900px ) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding-left: 0;
+    }
+
+    #content {
+        width: 600px;
+    }
+
+    .middle-home {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-pic {
+        display: none;
+    }
+
+    .contact-details {
+        display: flex;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .menu-tabs {
+        width: 600px;
+        min-height: 600px;
+    }
+ 
+    .menu-items {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }    
+
+    .gallery {
+        width: 600px;
+    }
+    
+    
+    
+    }     
