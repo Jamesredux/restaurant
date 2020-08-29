@@ -1,5 +1,5 @@
 const contact = () => {
-    const contactContent = `
+  const contactContent = `
     
     <div class="contact-details">
         <div class="map">
@@ -17,16 +17,13 @@ const contact = () => {
         <p>Email: bbdin3r5@gmail.com</p>
     </div>
     </div>
-            `
+            `;
 
-
-
-    const contentDiv = document.querySelector('#content')
-    const innerDiv = document.createElement('div');
-    innerDiv.classList.add('added-content');
-    innerDiv.innerHTML = contactContent;
-    contentDiv.appendChild(innerDiv);
+  const contentDiv = document.querySelector("#content");
+  const innerDiv = document.createElement("div");
+  innerDiv.classList.add("added-content");
+  innerDiv.innerHTML = contactContent;
+  contentDiv.appendChild(innerDiv);
 };
 
-
-export default contact
+export default contact;

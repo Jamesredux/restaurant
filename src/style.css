@@ -3,274 +3,249 @@
     font-family: 'Warnes', cursive;
     */
 
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Oregano&family=Warnes&display=swap");
 
+body {
+  background-image: url("./assets/diner1.jpg");
+  background-color: beige;
+}
 
-    @import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Oregano&family=Warnes&display=swap');   
-    
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+}
 
-    body {
-        background-image: url('./assets/diner1.jpg');
-        background-color: beige;
-    }
+.header {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(226, 242, 243, 0.8);
+  font-family: "Warnes", cursive;
+  margin: 10px;
+  border-radius: 5px;
+}
 
-    h1 {
-        font-size: 2rem;
-        font-weight: 900;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    .header {
-        color: black;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100px;
-        background-color:  rgb(226, 242, 243, 0.8);
-        font-family: 'Warnes', cursive;
-        margin: 10px;
-        border-radius: 5px;
+.logo {
+  font-size: 4rem;
+  padding-left: 50px;
+}
 
-    }
-    
-    
-    .logo {
-        font-size: 4rem;
-        padding-left: 50px;
-    }
-    
-    .nav-bar {
-        display: flex;
-        font-size: 2rem;  
-        padding-right: 20px;
-    }
-    
-    .nav-bar div {
-        padding-right: 20px;
-    }
+.nav-bar {
+  display: flex;
+  font-size: 2rem;
+  padding-right: 20px;
+}
 
-    .nav-bar div:hover, .logo:hover {
-        color: #db0662;
-    }
-    
-    /* content  */
-    
-    #content {
-       
-        width: 1000px;
-        background-color:  rgb(226, 242, 243, 0.8);
-        margin: 0 auto;
-        margin-top: 40px;
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: center;
-        font-family: 'Cherry Cream Soda', cursive;
-        border-radius: 20px;
-    }
+.nav-bar div {
+  padding-right: 20px;
+}
 
+.nav-bar div:hover,
+.logo:hover {
+  color: #db0662;
+}
 
-    /* home */
+/* content  */
 
-    
+#content {
+  width: 1000px;
+  background-color: rgb(226, 242, 243, 0.8);
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Cherry Cream Soda", cursive;
+  border-radius: 20px;
+}
 
-    
-    .welcome-page {
-        text-align: center;
-        letter-spacing: 0.1rem;
-        line-height: 1.5rem;
-        padding-top: 30px;
-    }
-    
-    .welcome-page > * {
-        padding: 10px;
-    }
-    
-    .middle-home {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .welcome-pic {
-        max-height: 500px;
-        max-width: 500px;
-    }
-    
-    .welcome-pic img {
-        height: 90%;
-        width: 90%;
-    }
-    
-    .welcome-page table {
-        margin: 0 auto;
-    }
-    
-    .opening-hours {
-        padding-top: 30px;
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
+/* home */
 
+.welcome-page {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  padding-top: 30px;
+}
+
+.welcome-page > * {
+  padding: 10px;
+}
+
+.middle-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.welcome-pic {
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.welcome-pic img {
+  height: 90%;
+  width: 90%;
+}
+
+.welcome-page table {
+  margin: 0 auto;
+}
+
+.opening-hours {
+  padding-top: 30px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 
 /* menu */
-    
-    .menu-tabs {
-        position: relative;
-        min-height: 350px;
-        width: 900px;
-        clear: both;    
-        top: 30px;
-        
-    }
-    .tab {
-        float: left;
-    }
 
-    .tab label {
-        background: #eee;
-        padding: 15px;
-        border: 1px solid #ccc;
-        margin-left: -1px;
-        position: relative;
-        left: 1px;
-        border-radius: 10px;
-    }
+.menu-tabs {
+  position: relative;
+  min-height: 350px;
+  width: 900px;
+  clear: both;
+  top: 30px;
+}
+.tab {
+  float: left;
+}
 
-    .tab [type=radio] {
-        display: none;
-    }
-    
-    
-    
-    .menu-page {
-        position: absolute;
-        top: 28px;
-        left: 0;
-        background: #f9e0c8;
-        right: 0;
-        bottom: 0;
-        padding: 20px;
-        border: 1px solid #ccc;
-        margin: 20px;
-    }
+.tab label {
+  background: #eee;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+  border-radius: 10px;
+}
 
-    [type=radio]:checked ~ label {
-        background: #f9e0c8;
-        border-bottom: 1px solid white;
-        z-index: 2;
-    }
+.tab [type="radio"] {
+  display: none;
+}
 
-    [type=radio]:checked ~ label ~ .menu-page {
-        z-index: 1;
-    }
+.menu-page {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #f9e0c8;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 20px;
+}
 
-    .menu-items {
-        display: grid;
-        grid-template-columns: 3fr 1fr 3fr 1fr;
-    }
+[type="radio"]:checked ~ label {
+  background: #f9e0c8;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
 
-    .items-col li, .price li {
-        padding-bottom: 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid peachpuff;
-    }
+[type="radio"]:checked ~ label ~ .menu-page {
+  z-index: 1;
+}
 
-    .menu-info {
-        padding-top: 20px;
-    }
+.menu-items {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr 1fr;
+}
 
-    .gallery {
-       margin-top: 50px;
-       position: relative;
-       width: 900px;
-        
-    }
-    
-    .gallery-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+.items-col li,
+.price li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid peachpuff;
+}
 
-    }
+.menu-info {
+  padding-top: 20px;
+}
 
-    .pic-container {
-        
-        width: 275px;
-        height: 250px;
-        padding: 10px;
-        
-    }
-    
-    .pic-container img {
-      width: 100%;
-      height: 100%;
+.gallery {
+  margin-top: 50px;
+  position: relative;
+  width: 900px;
+}
 
-    }
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pic-container {
+  width: 275px;
+  height: 250px;
+  padding: 10px;
+}
+
+.pic-container img {
+  width: 100%;
+  height: 100%;
+}
 
 /*  contact */
 
-    .contact-details {
-        display: grid;
-        grid-template-columns: 66% 33%;
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
+.contact-details {
+  display: grid;
+  grid-template-columns: 66% 33%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
 
-
-
-    .address {
-        margin-top: 50px;
-        line-height: 2rem;
-        font-size: 1.3rem;
-      
-    }
-
+.address {
+  margin-top: 50px;
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
 
 /* media queries */
 
-@media all and ( max-width: 900px ) {
+@media all and (max-width: 900px) {
+  .header {
+    flex-direction: column;
+  }
 
-    .header {
-        flex-direction: column;
-    }
+  .logo {
+    padding-left: 0;
+  }
 
-    .logo {
-        padding-left: 0;
-    }
+  #content {
+    width: 600px;
+  }
 
-    #content {
-        width: 600px;
-    }
+  .middle-home {
+    grid-template-columns: 1fr;
+  }
 
-    .middle-home {
-        grid-template-columns: 1fr;
-    }
+  .welcome-pic {
+    display: none;
+  }
 
-    .welcome-pic {
-        display: none;
-    }
+  .contact-details {
+    display: flex;
+  }
 
-    .contact-details {
-        display: flex;
-    }
+  .map {
+    display: none;
+  }
 
-    .map {
-        display: none;
-    }
+  .menu-tabs {
+    width: 600px;
+    min-height: 600px;
+  }
 
-    .menu-tabs {
-        width: 600px;
-        min-height: 600px;
-    }
- 
-    .menu-items {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-    }    
+  .menu-items {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
 
-    .gallery {
-        width: 600px;
-    }
-    
-    
-    
-    }     
+  .gallery {
+    width: 600px;
+  }
+}

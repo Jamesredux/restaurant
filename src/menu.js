@@ -1,5 +1,4 @@
 const menu = () => {
-   
   const menuContent = `
 
     <div class="menu-tabs">
@@ -311,21 +310,17 @@ const menu = () => {
 
     </div>  
   
-    `
+    `;
 
-
-
-
-
-
-
-
-    const contentDiv = document.querySelector('#content')
-    const innerDiv = document.createElement('div');
-    innerDiv.classList.add('added-content');
-    innerDiv.innerHTML = menuContent;
-    contentDiv.appendChild(innerDiv);
+  const contentDiv = document.querySelector("#content");
+  const innerDiv = document.createElement("div");
+  innerDiv.classList.add("added-content");
+  innerDiv.innerHTML = menuContent;
+  contentDiv.appendChild(innerDiv);
 };
 
+export default menu;
 
-export default menu
+const this_fog = 5634;
+var banga = "no way";
+let bag = { god: 34, norese: 33 };
